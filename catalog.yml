@@ -1,0 +1,15 @@
+Inputimage:
+  type: kedro_datasets.pillow.ImageDataset
+  filepath: data/01_raw/colored_image.png
+
+OutputGrayscaledImage:
+  type: kedro_datasets.pillow.ImageDataset
+  filepath: data/02_intermediate/Output.png  
+
+OutputGrayscaledSizeConvertedImage:
+  type: kedro_datasets.pillow.ImageDataset
+  filepath: data/03_primary/Output.png   
+
+OutputGrayscaledresizedTextImage:
+  type: kedro_datasets.pillow.ImageDataset
+  filepath: data/04_feature/Output.png  
